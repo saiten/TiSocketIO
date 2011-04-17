@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2010 by Your Company
+
+
+# these should not be edited
+name: tisocketio
+moduleid: co.saiten.ti.socket.io
+guid: 8d34e6f8-2ce6-41b6-b7e2-f1914368d3e9
+platform: iphone
+minsdk: 1.6.1
