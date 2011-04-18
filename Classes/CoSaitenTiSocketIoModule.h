@@ -10,4 +10,6 @@
 {
 }
 
+- (id)createSocket:(id)args;
+
 @end

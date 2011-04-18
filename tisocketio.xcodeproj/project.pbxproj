@@ -28,6 +28,12 @@
 		24DE9E1211C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* CoSaitenTiSocketIo_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CoSaitenTiSocketIo_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		E1CC9EB9135AB9080018282F /* SocketIoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC9EB7135AB9080018282F /* SocketIoClient.m */; };
+		E1CC9EBA135AB9080018282F /* SocketIoClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CC9EB8135AB9080018282F /* SocketIoClient.h */; };
+		E1CC9ECA135AB93C0018282F /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC9EC8135AB93C0018282F /* WebSocket.m */; };
+		E1CC9ECB135AB93C0018282F /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CC9EC9135AB93C0018282F /* WebSocket.h */; };
+		E1CC9ECE135ABA520018282F /* SocketIOProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CC9ECC135ABA520018282F /* SocketIOProxy.h */; };
+		E1CC9ECF135ABA520018282F /* SocketIOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CC9ECD135ABA520018282F /* SocketIOProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +42,25 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "tisocketio";
+			remoteInfo = tisocketio;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* CoSaitenTiSocketIoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CoSaitenTiSocketIoModule.h"; path = "Classes/CoSaitenTiSocketIoModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* CoSaitenTiSocketIoModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CoSaitenTiSocketIoModule.m"; path = "Classes/CoSaitenTiSocketIoModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* CoSaitenTiSocketIoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoSaitenTiSocketIoModule.h; path = Classes/CoSaitenTiSocketIoModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* CoSaitenTiSocketIoModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoSaitenTiSocketIoModule.m; path = Classes/CoSaitenTiSocketIoModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CoSaitenTiSocketIoModuleAssets.h"; path = "Classes/CoSaitenTiSocketIoModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CoSaitenTiSocketIoModuleAssets.m"; path = "Classes/CoSaitenTiSocketIoModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* CoSaitenTiSocketIo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoSaitenTiSocketIo_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoSaitenTiSocketIoModuleAssets.h; path = Classes/CoSaitenTiSocketIoModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoSaitenTiSocketIoModuleAssets.m; path = Classes/CoSaitenTiSocketIoModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* CoSaitenTiSocketIo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoSaitenTiSocketIo_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libCoSaitenTiSocketIo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCoSaitenTiSocketIo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libCoSaitenTiSocketIo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoSaitenTiSocketIo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CC9EB7135AB9080018282F /* SocketIoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocketIoClient.m; path = "socketio-cocoa/SocketIoClient.m"; sourceTree = "<group>"; };
+		E1CC9EB8135AB9080018282F /* SocketIoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocketIoClient.h; path = "socketio-cocoa/SocketIoClient.h"; sourceTree = "<group>"; };
+		E1CC9EC8135AB93C0018282F /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = "socketio-cocoa/cocoa-websocket/WebSocket.m"; sourceTree = "<group>"; };
+		E1CC9EC9135AB93C0018282F /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = "socketio-cocoa/cocoa-websocket/WebSocket.h"; sourceTree = "<group>"; };
+		E1CC9ECC135ABA520018282F /* SocketIOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIOProxy.h; sourceTree = "<group>"; };
+		E1CC9ECD135ABA520018282F /* SocketIOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketIOProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,7 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "tisocketio";
+			name = tisocketio;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -93,10 +105,16 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E1CC9EC8135AB93C0018282F /* WebSocket.m */,
+				E1CC9EC9135AB93C0018282F /* WebSocket.h */,
+				E1CC9EB7135AB9080018282F /* SocketIoClient.m */,
+				E1CC9EB8135AB9080018282F /* SocketIoClient.h */,
 				24DE9E0F11C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* CoSaitenTiSocketIoModule.h */,
 				24DD6CF81134B3F500162E58 /* CoSaitenTiSocketIoModule.m */,
+				E1CC9ECC135ABA520018282F /* SocketIOProxy.h */,
+				E1CC9ECD135ABA520018282F /* SocketIOProxy.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -120,6 +138,9 @@
 				AA747D9F0F9514B9006C5449 /* CoSaitenTiSocketIo_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* CoSaitenTiSocketIoModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.h in Headers */,
+				E1CC9EBA135AB9080018282F /* SocketIoClient.h in Headers */,
+				E1CC9ECB135AB93C0018282F /* WebSocket.h in Headers */,
+				E1CC9ECE135ABA520018282F /* SocketIOProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +159,8 @@
 			);
 			dependencies = (
 			);
-			name = "tisocketio";
-			productName = "tisocketio";
+			name = tisocketio;
+			productName = tisocketio;
 			productReference = D2AAC07E0554694100DB518D /* libCoSaitenTiSocketIo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -192,6 +213,9 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* CoSaitenTiSocketIoModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* CoSaitenTiSocketIoModuleAssets.m in Sources */,
+				E1CC9EB9135AB9080018282F /* SocketIoClient.m in Sources */,
+				E1CC9ECA135AB93C0018282F /* WebSocket.m in Sources */,
+				E1CC9ECF135ABA520018282F /* SocketIOProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,15 +237,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				DSTROOT = "/tmp/CoSaitenTiSocketIo.dst";
+				DSTROOT = /tmp/CoSaitenTiSocketIo.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoSaitenTiSocketIo_Prefix.pch";
+				GCC_PREFIX_HEADER = CoSaitenTiSocketIo_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "CoSaitenTiSocketIo";
+				PRODUCT_NAME = CoSaitenTiSocketIo;
 			};
 			name = Debug;
 		};
@@ -231,12 +255,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = "/tmp/CoSaitenTiSocketIo.dst";
+				DSTROOT = /tmp/CoSaitenTiSocketIo.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoSaitenTiSocketIo_Prefix.pch";
+				GCC_PREFIX_HEADER = CoSaitenTiSocketIo_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "CoSaitenTiSocketIo";
+				PRODUCT_NAME = CoSaitenTiSocketIo;
 			};
 			name = Release;
 		};
@@ -249,9 +273,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -263,9 +288,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -277,6 +303,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				PRODUCT_NAME = "Build & test";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -288,6 +315,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Build & test";
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;

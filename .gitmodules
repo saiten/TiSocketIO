@@ -1,0 +1,6 @@
+[submodule "cocoa-websocket"]
+	path = cocoa-websocket
+	url = git://github.com/erichocean/cocoa-websocket.git
+[submodule "socketio-cocoa"]
+	path = socketio-cocoa
+	url = git://github.com/fpotter/socketio-cocoa.git

@@ -8,6 +8,7 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "SocketIOProxy.h"
 
 @implementation CoSaitenTiSocketIoModule
 
@@ -86,21 +87,9 @@
 
 #pragma Public APIs
 
--(id)example:(id)args
+- (id)createSocket:(id)args
 {
-	// example method
-	return @"hello world";
-}
-
--(id)exampleProp
-{
-	// example property getter
-	return @"hello world";
-}
-
--(void)exampleProp:(id)value
-{
-	// example property setter
+  return [[[SocketIOProxy alloc] _initWithPageContext:[self pageContext] args:args] autorelease];
 }
 
 @end
